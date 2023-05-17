@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <title>result</title>
 </head>
+
 <body>
     <form method="POST" action="/add">
         <table border="1">
@@ -31,9 +33,10 @@
                 {% endfor %}
             </tbody>
         </table>
-        <button type="submit" value="delete_row">Delete row</button>
-        <button type="submit" value="add_row">Add Row</button><br>
-        <button type="submit" value="home">Home</button>
+        <button type="submit" name="action_btn" value="delete_row">Delete row</button>
+        <button type="submit" name="action_btn" value="add_row">Add Row</button><br>
+        <button type="submit" name="action_btn" value="home">Home</button>
     </form>
 </body>
+
 </html>

@@ -27,17 +27,17 @@
         <p><b>* Student Number</b> <input type="text" id="StudentNumber" name="StudentNumber" /></p>
         <p><b>* Major</b> <input type="text" id="Major" name="Major" /></p>
         <div class="email">
-            <p><b>* Email</b> <input type="text" id="Email_id" name="Email_id" /> @ <input list="domain" name="Email_addr" id="Email_addr" placeholder="선택"></p>
-            <datalist id="domain">
-                <option value="naver.com"></option>
-                <option value="gmail.com"></option>
-                <option value="daum.net"></option>
-            </datalist>
+            <p><b>* Email</b> <input type="text" id="Email_id" name="Email_id" /> @ <select name="Email_addr" id="Email_addr">
+                <option value="" selected disabled hidden>선택</option>
+                <option value="naver.com">naver.com</option>
+                <option value="gmail.com">gmail.com</option>
+                <option value="daum.net">daum.net</option>
+                </select></p>
         </div>
         <div class="gender">
             <p>Gender</p>
-            <input type="radio" name="Gender" value="Male" />Male 
-            <input type="radio" name="Gender" value="Female"/>Female
+            <label><input type="radio" name="Gender" value="Male" />Male</label> 
+            <label><input type="radio" name="Gender" value="Female"/>Female</label>
         </div>
         <div class="PL_list">
             <p>Programming Languages</p>
@@ -46,7 +46,6 @@
             <label><input type="checkbox" value="HTML" name="PL_list" />HTML</label>
             <label><input type="checkbox" value="C++" name="PL_list"/>C++</label>
         </div>
-        <br>
         <p><button type='submit' value="submit">submit</button></p>
         
     </form>

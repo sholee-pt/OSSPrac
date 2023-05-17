@@ -1,0 +1,6 @@
+#docker-compose.yml
+version: "3.0"
+services:
+  python-app:
+    build: .
+    image: yyh-python-app:3.0
